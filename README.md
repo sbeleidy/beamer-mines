@@ -2,6 +2,8 @@
 
 Beamer theme for the Colorado School of Mines.
 
+**This is NOT an official Mines theme but is only an attempt at an implementation.**
+
 
 ## How to use
 
