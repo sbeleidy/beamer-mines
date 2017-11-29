@@ -11,6 +11,29 @@ Clone or copy the `beamercolorthememines.sty` file into your TeX directory or pr
 \usecolortheme{mines}
 ```
 
+<!-- TODO: Move this to environment/command taking image, title, author and subtitle as params -->
+## First Slide
+
+The following code can be used to make a nicer title slide:
+
+```LaTeX
+{
+        \usebackgroundtemplate{\scalebox{-1}[1]{\includegraphics[width=\paperwidth, height=\paperheight]{PATH/TO/BACKGROUND/IMAGE/FILE.png}}}
+        \begin{frame}[plain]
+            \color{white}
+            \vspace{4.8cm}
+            {\Huge \fontspec{Montserrat Bold} PRESENTATION TITLE} \\
+            \vspace{-0.2cm}
+            {\color{white} \rule{\linewidth}{0.1mm}}
+            \color{mineslightblue}
+            {\Large \fontspec{Montserrat Light} SUBTITLE}
+            \begin{spacing}{1.3}
+            {\Large \fontspec{Montserrat Light} by} {\Large \fontspec{Montserrat Regular} AUTHOR NAME}
+            \end{spacing}
+        \end{frame}
+    }
+```
+
 ## What you need
 
 Make sure you have LaTeX installed.
