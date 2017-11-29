@@ -1,0 +1,44 @@
+{
+    "latexCompile.compiler": "xelatex",
+    "latex-workshop.latex.toolchain": [
+        {
+            "command": "xelatex",
+            "args": [
+                "--extra-mem-bot=10000000",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "command": "xelatex",
+            "args": [
+                "--extra-mem-bot=10000000",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "command": "xelatex",
+            "args": [
+                "--extra-mem-bot=10000000",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        }
+    ]
+}
